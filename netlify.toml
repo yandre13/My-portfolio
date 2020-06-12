@@ -1,0 +1,7 @@
+# example netlify
+[build]
+#functions
+base = "."
+command = "gatsby build"
+publish = "public"
+
