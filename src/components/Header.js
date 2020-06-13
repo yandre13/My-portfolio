@@ -1,4 +1,4 @@
-import React, { useContext, useCallback, useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { ThemeManagerContext } from 'gatsby-styled-components-dark-mode'
 import { Navbar } from './Navbar'
 //Header for dark mode

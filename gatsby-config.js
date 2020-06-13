@@ -20,5 +20,17 @@ module.exports = {
 			resolve: `gatsby-source-filesystem`,
 			options: { path: `${__dirname}/src/images/`, name: `images` },
 		},
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `Yandre Portfolio`,
+				short_name: `Yandre portfolio`,
+				start_url: `/`,
+				background_color: `#000`,
+				theme_color: `#1EC2FF`,
+				display: `minimal-ui`,
+				icon: `src/images/icon.svg`,
+			},
+		},
 	],
 }

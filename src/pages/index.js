@@ -25,9 +25,12 @@ export default ({ data }) => (
 						Hello, I am Yaser!
 					</Text>
 					<Text type={{ tag: 'p' }} mp="0 0 20px" p="0 0 40px" className="paragraph">
-						I like web development with javascript especially working with React.js
+						I like web development with javascript especially working with React.js{' '}
+						<span role="img" aria-label="heart">
+							💙
+						</span>
 					</Text>
-					<a href="/moon.svg" download className="btn-download">
+					<a href="/yaser-cv.pdf" download className="btn-download">
 						Download CV
 					</a>
 				</CustomCol>
@@ -78,6 +81,7 @@ export default ({ data }) => (
 						<a
 							href="https://starter-landing-styled.netlify.com/"
 							target="_blank"
+							rel="noopener noreferrer"
 							className="project-title"
 						>
 							<BackgroundImage
@@ -86,7 +90,10 @@ export default ({ data }) => (
 								className="project-background"
 							>
 								<Text type={{ tag: 'h4' }} weight="bold">
-									Landing page made with styled components and gatsby 💜
+									Landing page made with styled components and gatsby{' '}
+									<span role="img" aria-label="heart">
+										💜
+									</span>
 								</Text>
 							</BackgroundImage>
 						</a>
@@ -95,6 +102,7 @@ export default ({ data }) => (
 						<a
 							href="https://blog-gatsby-cms.netlify.com/"
 							target="_blank"
+							rel="noopener noreferrer"
 							className="project-title"
 						>
 							<BackgroundImage
@@ -103,7 +111,10 @@ export default ({ data }) => (
 								className="project-background"
 							>
 								<Text type={{ tag: 'h4' }} weight="bold">
-									Blog made with react, styled components, gatsby and netlify CMS 👌
+									Blog made with react, styled components, gatsby and netlify CMS{' '}
+									<span role="img" aria-label="hand">
+										👌
+									</span>
 								</Text>
 							</BackgroundImage>
 						</a>

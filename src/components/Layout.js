@@ -12,7 +12,12 @@ if (typeof window !== 'undefined') {
 	require('smooth-scroll')('a[href*="#"]')
 }
 
-export default ({ children }) => {
+export default ({
+	customTitle,
+	customDescription,
+	customSiteUrl,
+	children,
+}) => {
 	const {
 		title,
 		description,
@@ -25,11 +30,11 @@ export default ({ children }) => {
 	return (
 		<>
 			<SEO
-				title={title}
-				description={description}
+				title={customTitle || title}
+				description={customDescription || description}
 				author={author}
 				lang={siteLanguage}
-				siteUrl={siteUrl}
+				siteUrl={customSiteUrl || siteUrl}
 				image={image}
 			/>
 			<GlobalStyles />

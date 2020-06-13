@@ -10,7 +10,11 @@ import img404 from '../images/404.svg'
 
 export default () => (
 	<>
-		<Layout>
+		<Layout
+			customTitle={`Not found 404`}
+			customDescription={`We haven't found that page, go home for reading more`}
+			customSiteUrl={`/404`}
+		>
 			{/*HERO*/}
 			<CustomRow mp="0" p="66px 0 0" className="mb-height-90vh">
 				<CustomCol nspan={6} mo={1} mp="0" mdp="130px 0" p="20vh 0">

@@ -100,7 +100,7 @@ body {
  align-items: center;
 }
 .btn-download{
- background: #00DAFF;
+ background: #1EC2FF;
  border-radius: 1rem;
  color: #fff;
  display: block;
@@ -176,12 +176,6 @@ a, .paragraph{
 	width: 100%;
 	height: 100%;
 	background-color: transparent;
-	background: ${(props) =>
-		props.theme.isDark ? `url('/sun2.svg')` : `url('/moon2.svg')`};
-	background-position: center;
-	background-size: 32px;
-	background-repeat: no-repeat;
-	transition: all ease-in 0.7s;
 	outline: none;
  }
 }
@@ -233,5 +227,4 @@ a, .paragraph{
   }
  }
 }
-
 `

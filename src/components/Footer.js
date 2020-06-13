@@ -18,7 +18,11 @@ const Footer = () => (
 		</Text>
 
 		<Text ma={'center'} align={'center'} type={{ tag: 'small' }} mp={'40px 0'}>
-			Made with 🖤 for a better web by @yandre13 - {new Date().getFullYear()}
+			Made with{' '}
+			<span role="img" aria-label="heart">
+				🖤
+			</span>{' '}
+			for a better web by @yandre13 - {new Date().getFullYear()}
 		</Text>
 	</ContainerFooter>
 )
