@@ -32,7 +32,7 @@ const SEO = ({
 				{ property: 'og:url', content: siteUrl },
 				{ property: 'og:image', content: image },
 
-				{ name: 'viewport', content: 'width=device-width, maximum-scale=1' },
+				{ name: 'viewport', content: 'width=device-width, maximum-scale=5' },
 			].concat(
 				keywords.length > 0
 					? {

@@ -37,9 +37,12 @@ const ButtonsTheme = () => {
 	const toggleDark = () => themeContext.toggleDark()
 	return (
 		<ul className="list-buttons">
-			<span />
 			<li>
-				<button className="round-button" onClick={toggleDark}>
+				<button
+					aria-label="Change theme"
+					className="round-button"
+					onClick={toggleDark}
+				>
 					{themeContext.themeSetting === 'DARK' ? <Sun /> : <Moon />}
 				</button>
 			</li>

@@ -20,7 +20,6 @@ const sidebar = {
 		height: '62vh',
 		opacity: 1,
 		y: 0,
-		scale: 1,
 		transition: {
 			duration: 0.5,
 		},
@@ -29,7 +28,6 @@ const sidebar = {
 		height: '0%',
 		opacity: 0.3,
 		y: 500,
-		scale: 0.7,
 		transition: {
 			duration: 1.3,
 		},
@@ -42,7 +40,7 @@ export default () => {
 		<>
 			{width < 768 && (
 				<>
-					<button className="mb-menu-toggle" onClick={() => toggleOpen()}>
+					<button aria-label="Open menu" className="mb-menu-toggle" onClick={() => toggleOpen()}>
 						<svg width="23" height="23" viewBox="0 0 23 23">
 							<Path
 								initial={false}

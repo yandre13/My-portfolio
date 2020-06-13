@@ -30,7 +30,8 @@ export default ({ data }) => (
 							💙
 						</span>
 					</Text>
-					<a href="/yaser-cv.pdf" download className="btn-download">
+					<a href="/yaser-cv.pdf" target="_blank"
+							rel="noopener noreferrer" download className="btn-download">
 						Download CV
 					</a>
 				</CustomCol>

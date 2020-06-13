@@ -24,7 +24,7 @@ export const Navbar = ({ setDark }) => {
 										</Link>
 									</li>
 								))}
-								<StyledToggleTheme onClick={setDark} />
+								<StyledToggleTheme arial-label="Change theme" onClick={setDark} />
 							</List>
 						)}
 					</Nav>

@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import moon from '../../images/moon.svg'
+import sun from '../../images/sun.svg'
 
 export const Header = styled.div`
 	position: relative;
@@ -57,7 +59,7 @@ export const StyledToggleTheme = styled.button`
 	height: 24px;
 	background-color: transparent;
 	background: ${(props) =>
-		props.theme.isDark ? `url('/sun.svg')` : `url('/moon.svg')`};
+		props.theme.isDark ? `url(${sun})` : `url(${moon})`};
 	background-position: 2px;
 	background-size: 22px;
 	background-repeat: no-repeat;

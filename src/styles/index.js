@@ -26,7 +26,7 @@ body {
  background-size: cover;
  }
 }
-
+/*Framer menu*/
 .mb-background-sidemenu {
  width: 90%;
 	position: fixed;
@@ -40,7 +40,6 @@ body {
  margin-bottom: 16px;
  padding: 24px 16px;
 }
-
 .mb-menu-toggle {
 	outline: none;
 	border: none;
@@ -54,14 +53,12 @@ body {
 	width: 58px;
 	height: 58px;
 	border-radius: 50%;
-	background: white;
  display: flex;
  justify-content: center;
  align-items: center;
  background: #1EC2FF;
  z-index: 20;
 }
-/*Framer menu*/
 .mb-sidebar-ul {
  width: 100%;
  border-radius: 16px;
@@ -100,7 +97,7 @@ body {
  align-items: center;
 }
 .btn-download{
- background: #1EC2FF;
+ background: #09f;
  border-radius: 1rem;
  color: #fff;
  display: block;
@@ -156,7 +153,7 @@ a, .paragraph{
 /*List buttons menu mobile*/
 .list-buttons{
  display: flex;
- justify-content: space-between;
+ justify-content: flex-end;
  list-style: none;
  padding: 16px;
  li{
