@@ -17,7 +17,7 @@ const Path = (props) => (
 
 const sidebar = {
 	open: {
-		height: '62vh',
+		height: '68vh',
 		opacity: 1,
 		y: 0,
 		transition: {
@@ -40,7 +40,11 @@ export default () => {
 		<>
 			{width < 768 && (
 				<>
-					<button aria-label="Open menu" className="mb-menu-toggle" onClick={() => toggleOpen()}>
+					<button
+						aria-label="Open menu"
+						className="mb-menu-toggle"
+						onClick={toggleOpen}
+					>
 						<svg width="23" height="23" viewBox="0 0 23 23">
 							<Path
 								initial={false}

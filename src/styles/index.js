@@ -28,7 +28,7 @@ body {
 }
 /*Framer menu*/
 .mb-background-sidemenu {
- width: 90%;
+ width: 100%;
 	position: fixed;
 	right: 0;
  left:0;
@@ -36,8 +36,7 @@ body {
  background-color: ${(props) => (props.theme.isDark ? '#232221' : '#e6e6e6')};
  z-index: 20;
  margin: auto;
- border-radius: 24px;
- margin-bottom: 16px;
+ border-radius: 24px 24px 0 0;
  padding: 24px 16px;
 }
 .mb-menu-toggle {
@@ -64,6 +63,9 @@ body {
  border-radius: 16px;
  background-color: ${(props) => (props.theme.isDark ? '#333231' : '#fff')};
  margin-top: 16px;
+ li.mb-sidebar-li:last-child{
+   border: none;
+  } 
 }
 .mb-sidebar-li {
 	list-style: none;
@@ -73,6 +75,7 @@ body {
 	cursor: pointer;
  border-bottom: ${(props) =>
 		props.theme.isDark ? '1px solid #23222144' : '1px solid #e6e6e6'};
+ 
 }
 .backdrop{
  position: fixed;

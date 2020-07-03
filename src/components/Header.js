@@ -15,7 +15,7 @@ const Header = () => {
 		} else {
 			themeContext.changeThemeSetting('LIGHT')
 		}
-	}, [])
+	}, []) //eslint-disable-line
 
 	return (
 		<header id="Home">

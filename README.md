@@ -1,6 +1,6 @@
 # Portfolio
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yandre13/gatsby-starter)
+Personal portfolio made with react and gatsby
 
 ## This is my portfolio with gatsby
 
