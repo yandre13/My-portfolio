@@ -101,14 +101,13 @@ body {
 }
 .btn-download{
  background: #09f;
- border-radius: 1rem;
+ border-radius: .8rem;
  color: #fff;
  display: block;
  font-size: 1.2rem;
  font-weight: 500;
- margin: auto;
  padding: 12px 0;
- width: 86%;
+ width: 100%;
  text-align: center;
  @media screen and (min-width:768px) {
   margin:0;
@@ -133,10 +132,10 @@ body {
  }
 }
 /*Helpers menu and text*/
-.mb-height-90vh{
+.height-90vh-100vh{
  height: 90vh;
- @media screen and (min-width: 768px) {
-  height: auto;
+ @media screen and (min-width: 575px) {
+  height: 100vh;
  }
 }
 .mb-title-menu{

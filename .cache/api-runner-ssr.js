@@ -1,14 +1,14 @@
 var plugins = [{
-      plugin: require('/home/yandre13/gatsby/portfolio/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('/home/yandre13/Gatsby/My-portfolio/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/yandre13/gatsby/portfolio/node_modules/gatsby-styled-components-dark-mode/gatsby-ssr'),
+      plugin: require('/home/yandre13/Gatsby/My-portfolio/node_modules/gatsby-styled-components-dark-mode/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/yandre13/gatsby/portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/home/yandre13/Gatsby/My-portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/yandre13/gatsby/portfolio/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/home/yandre13/Gatsby/My-portfolio/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"Yandre Portfolio","short_name":"Yandre portfolio","start_url":"/","background_color":"#000","theme_color":"#1EC2FF","display":"minimal-ui","icon":"src/images/icon.svg","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"79b375b9f415a48c7a6f4ad68dac8164"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

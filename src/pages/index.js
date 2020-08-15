@@ -9,14 +9,22 @@ import Text from '../components/UI/Text'
 import { CustomRow, CustomCol } from '../components/UI/Grid'
 import { SubContainer, Separator } from '../components/UI/Container'
 import { skills, skills2 } from '../data'
+import { BaseCSS, Row, Col } from 'styled-bootstrap-grid'
 
 export default ({ data }) => (
 	<>
+		<BaseCSS />
 		<Layout>
 			<FramerMenu />
 			{/*HERO*/}
-			<CustomRow mp="0" p="66px 0 0" className="mb-height-90vh">
-				<CustomCol nspan={6} mo={1} mp="16px 0 0" mdp="130px 0" p="30vh 0">
+			<Row
+				className="height-90vh-100vh"
+				xsAlignItems="start"
+				smAlignItems="start"
+				mdAlignItems="center"
+				style={{ margin: 0 }}
+			>
+				<Col xs={12} md={6} noGutter>
 					<Text type={{ tag: 'h2' }} weight="bold">
 						Web developer
 						<br />& Frontend
@@ -30,19 +38,24 @@ export default ({ data }) => (
 							💙
 						</span>
 					</Text>
-					<a href="/yaser-cv.pdf" target="_blank"
-							rel="noopener noreferrer" download className="btn-download">
+					<a
+						href="/yaser-cv.pdf"
+						target="_blank"
+						rel="noopener noreferrer"
+						download
+						className="btn-download"
+					>
 						Download CV
 					</a>
-				</CustomCol>
-				<CustomCol className="center-text-hero" nspan={6} mp="0px 0 0" p="100px 0">
+				</Col>
+				<Col xsOrder="first" smOrder="first" mdOrder="last" xs={12} md={6} noGutter>
 					<Image
 						className="banner-img"
 						fluid={data.banner.childImageSharp.fluid}
 						alt="Me coding"
 					/>
-				</CustomCol>
-			</CustomRow>
+				</Col>
+			</Row>
 			<SubContainer>
 				<br />
 				{/*ABOUT*/}

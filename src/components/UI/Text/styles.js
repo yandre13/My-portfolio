@@ -31,10 +31,6 @@ export const H2 = styled.h2`
 		font-size: 64px;
 		line-height: 72px;
 	}
-	@media screen and (min-width: 1440px) {
-		font-size: 72px;
-		line-height: 78px;
-	}
 `
 
 export const H3 = styled.h3`
