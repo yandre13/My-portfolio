@@ -6,7 +6,6 @@ import Layout from '../components/Layout'
 import FramerMenu from '../components/FramerMenu'
 
 import Text from '../components/UI/Text'
-import { CustomRow, CustomCol } from '../components/UI/Grid'
 import { SubContainer, Separator } from '../components/UI/Container'
 import { skills, skills2 } from '../data'
 import { BaseCSS, Row, Col } from 'styled-bootstrap-grid'
@@ -22,17 +21,16 @@ export default ({ data }) => (
 				xsAlignItems="start"
 				smAlignItems="start"
 				mdAlignItems="center"
-				style={{ margin: 0 }}
 			>
-				<Col xs={12} md={6} noGutter>
+				<Col xs={12} md={6}>
 					<Text type={{ tag: 'h2' }} weight="bold">
 						Web developer
 						<br />& Frontend
 					</Text>
-					<Text type={{ tag: 'p' }} mp="10px 0" p="20px 0" className="paragraph">
+					<Text type={{ tag: 'p' }} mp="12px 0" p="24px 0" className="paragraph">
 						Hello, I am Yaser!
 					</Text>
-					<Text type={{ tag: 'p' }} mp="0 0 20px" p="0 0 40px" className="paragraph">
+					<Text type={{ tag: 'p' }} className="paragraph">
 						I like web development with javascript especially working with React.js{' '}
 						<span role="img" aria-label="heart">
 							💙
@@ -43,12 +41,12 @@ export default ({ data }) => (
 						target="_blank"
 						rel="noopener noreferrer"
 						download
-						className="btn-download"
+						className="btn-download my-2"
 					>
 						Download CV
 					</a>
 				</Col>
-				<Col xsOrder="first" smOrder="first" mdOrder="last" xs={12} md={6} noGutter>
+				<Col xsOrder="first" smOrder="first" mdOrder="last" xs={12} md={6}>
 					<Image
 						className="banner-img"
 						fluid={data.banner.childImageSharp.fluid}
@@ -59,39 +57,48 @@ export default ({ data }) => (
 			<SubContainer>
 				<br />
 				{/*ABOUT*/}
-				<CustomRow gutter={30} id="About">
-					<CustomCol nspan={12} mp="20px 0 0" p="40px 0 0">
-						<Text type={{ tag: 'h3' }} weight="bold" mp="0" p="30px 0">
-							About me
-						</Text>
-					</CustomCol>
-					<CustomCol nspan={7} mo={1}>
-						<Text type={{ tag: 'h4' }} weight="500" mp="20px 0" p="0 0 36px 0">
-							System Development Student
-						</Text>
-						<Text type={{ tag: 'p' }} className="paragraph" mp="0 0 40px">
-							I love web development especially working with React.js and learning new
-							technologies. I also consider myself an enthusiastic person with social
-							skills to work as a team or individual.
-						</Text>
-					</CustomCol>
-					<CustomCol nspan={5} mp="20px 0 0" p="0">
-						<Image
-							className="profile-img"
-							fluid={data.profile.childImageSharp.fluid}
-							alt="Me coding"
-						/>
-					</CustomCol>
-				</CustomRow>
+				<>
+					<Row id="About">
+						<Col xsOrder="first" smOrder="first" sm={12}>
+							<Text type={{ tag: 'h3' }} weight="bold" mp="36px 0" p="24px 0">
+								About me
+							</Text>
+						</Col>
+						<Col xsOrder={4} smOrder={4} sm={12} md={7}>
+							<Text type={{ tag: 'h4' }} weight="500" mp="36px 0" p="24px 0">
+								System Development Student
+							</Text>
+							<Text type={{ tag: 'p' }} className="paragraph">
+								I love web development especially working with React.js and learning new
+								technologies. I also consider myself an enthusiastic person with social
+								skills to work as a team or individual.
+							</Text>
+						</Col>
+						<Col
+							xsOrder={2}
+							smOrder={2}
+							mdOrder="last"
+							sm={12}
+							md={5}
+							className="my-1"
+						>
+							<Image
+								className="profile-img"
+								fluid={data.profile.childImageSharp.fluid}
+								alt="Me coding"
+							/>
+						</Col>
+					</Row>
+				</>
 				<br />
 				{/*PROJECTS*/}
-				<CustomRow gutter={30} id="Projects">
-					<CustomCol nspan={12} mp="20px 0 0" p="40px 0 0">
-						<Text type={{ tag: 'h3' }} weight="bold" mp="0" p="30px 0">
+				<Row id="Projects">
+					<Col sm={12}>
+						<Text type={{ tag: 'h3' }} weight="bold" mp="32px 0" p="24px 0">
 							Projects
 						</Text>
-					</CustomCol>
-					<CustomCol nspan={6} mp="0" p="0 10px 10px 0">
+					</Col>
+					<Col sm={12} md={6} style={{ padding: 15 }}>
 						<a
 							href="https://starter-landing-styled.netlify.com/"
 							target="_blank"
@@ -111,8 +118,8 @@ export default ({ data }) => (
 								</Text>
 							</BackgroundImage>
 						</a>
-					</CustomCol>
-					<CustomCol nspan={6} mp="0 0 40px" p="0 0 10px 10px">
+					</Col>
+					<Col sm={12} md={6} style={{ padding: 15 }}>
 						<a
 							href="https://blog-gatsby-cms.netlify.com/"
 							target="_blank"
@@ -132,17 +139,17 @@ export default ({ data }) => (
 								</Text>
 							</BackgroundImage>
 						</a>
-					</CustomCol>
-				</CustomRow>
+					</Col>
+				</Row>
 				<br />
 				{/*SKILLS*/}
-				<CustomRow mcols="repeat(12, 1fr)" gutter={30} id="Skills">
-					<CustomCol nspan={12} mspan={12} mp="20px 0 0" p="40px 0 0">
-						<Text type={{ tag: 'h3' }} weight="bold" mp="0" p="30px 0">
+				<Row id="Skills">
+					<Col sm={12}>
+						<Text type={{ tag: 'h3' }} weight="bold" mp="36px 0" p="24px 0">
 							My Skills
 						</Text>
-					</CustomCol>
-					<CustomCol nspan={6} mspan={6} mp="0" p="0 10px 10px 0">
+					</Col>
+					<Col xs={6} sm={6}>
 						<ul className="row-skills">
 							{skills.map((skill) => (
 								<li key={skill.color}>
@@ -153,8 +160,8 @@ export default ({ data }) => (
 								</li>
 							))}
 						</ul>
-					</CustomCol>
-					<CustomCol nspan={6} mspan={6} mp="0" p="0 0 10px 10px">
+					</Col>
+					<Col xs={6} sm={6}>
 						<ul className="row-skills">
 							{skills2.map((skill) => (
 								<li key={skill.color}>
@@ -165,8 +172,8 @@ export default ({ data }) => (
 								</li>
 							))}
 						</ul>
-					</CustomCol>
-				</CustomRow>
+					</Col>
+				</Row>
 			</SubContainer>
 			<Separator mmt={60} mmb={60} mt={100} mb={80} />
 		</Layout>

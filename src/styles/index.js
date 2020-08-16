@@ -106,7 +106,7 @@ body {
  display: block;
  font-size: 1.2rem;
  font-weight: 500;
- padding: 12px 0;
+ padding: 10px 0;
  width: 100%;
  text-align: center;
  @media screen and (min-width:768px) {
@@ -151,6 +151,12 @@ a, .paragraph{
 }
 .normal-color{
  color: ${(props) => (props.theme.isDark ? '#fff' : '#111')};
+}
+.my-1{
+ margin: 12px 0;
+}
+.my-2{
+ margin: 24px 0;
 }
 /*List buttons menu mobile*/
 .list-buttons{
